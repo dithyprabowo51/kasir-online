@@ -1,0 +1,53 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background-color: rgb(34,45,50);
+  padding: 20px 0;
+  color: rgb(184,199,206);
+}
+
+.menu {
+  margin: 5px 0;
+  cursor: pointer;
+  width: 100%;
+  padding: 7px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu:hover {
+  color: white;
+  background-color: rgb(30,40,44);
+}
+
+.menu-active {
+  color: white;
+}
+
+.submenu-container {
+  width: 100%;
+  background-color: rgb(44,59,65);
+  padding: 7px 0;
+  transition: .3s;
+}
+
+.submenu {
+  width: 100%;
+  padding-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.submenu:hover {
+  color: white;
+}
+
+.submenu-active {
+  color: white;
+}

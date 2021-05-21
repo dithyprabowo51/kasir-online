@@ -1,0 +1,38 @@
+.container-search-product-form {
+  box-shadow: 5px 5px 25px rgba(60, 197, 231, 0.2), -5px -5px 25px rgba(60, 197, 231, 0.2);
+}
+
+.search-product-form {
+  position: relative;
+}
+
+.posible-product {
+  position: absolute;
+  border: 1px solid gray;
+  left: 0;
+  right: 200px;
+  z-index: 99;
+}
+
+.item-posible-product {
+  border-bottom: 0.5px solid gray;
+  cursor: pointer;
+  background-color: white;
+  padding: 3px 10px;
+}
+
+.item-posible-product:hover {
+  background-color: rgb(163, 160, 160);
+}
+
+.total-amount {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
