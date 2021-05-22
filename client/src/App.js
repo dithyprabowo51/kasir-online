@@ -9,16 +9,26 @@ import ProductPage from './pages/product/ProductPage.js'
 import StockIn from './pages/stockin/StockIn';
 import SupplierPage from './pages/supplier/SupplierPage';
 import ListTransaction from './pages/listtransaction/ListTransaction';
-
-import { Route, Switch } from 'react-router-dom'
 import DetailTransactionPage from './pages/detailtransaction/DetailTransactionPage';
 import ProfilePage from './pages/profile/ProfilePage';
 import EmployeePage from './pages/employee/EmployeePage';
+import LoginPage from './pages/login/LoginPage';
+
+import { Route, Switch, useLocation } from 'react-router-dom'
 
 function App() {
+  const location = useLocation()
   return (
-    <div className="App">
-      <Sidebar />
+    <div className="App" style={location.pathname !== '/login' ? { paddingLeft: '235px', paddingTop: '20px' } : { paddingTop: '20px' }}>
+      {
+        location.pathname !== '/login' ?
+          <Sidebar />
+          :
+          null
+      }
+      <Route path="/login">
+        <LoginPage />
+      </Route>
       <Route path="/transaction">
         <Transaction />
       </Route>
